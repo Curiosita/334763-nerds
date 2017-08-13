@@ -30,7 +30,7 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filters" method="get" action="http://echo.htmlacademy.ru">
         <div class="range-filter">
-          <legend>Стоимость:</legend>
+          <h3>Стоимость:</h3>
           <div class="range-controls">
             <div class="scale">
               <div class="bar">
@@ -45,60 +45,62 @@
           </div>
         </div>
         <div>
-          <b>Сортировать:</b>
+          <h3>Сортировать:</h3>
           <ul>
             <li>по цене</li>
             <li>по типу</li>
             <li>по названию</li>
           </ul>
-          <ul>
-            <li></li>
-            <li></li>
+          <ul class="arrow-list">
+            <li class="upper"><a href="#"></a></li>
+            <li class="lower"><a href="#"></a></li>
           </ul>
         </div>
         <div>
-          <legend>Сетка:</legend>
+          <h3>Сетка:</h3>
+            <ul>
           <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio"
                                            name="product-group" value="adaptive" checked>
-            Адаптивная
+            <label class="radio" for="product-group">Адаптивная</label>
           </li>
           <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio"
                                            name="product-group" value="fixed">
-            Фиксированная
+            <label class="radio" for="product-group">Фиксированная</label>
           </li>
           <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio"
                                            name="product-group" value="retine">
-            Резиновая
+            <label class="radio" for="product-group">Резиновая</label>
           </li>
+            </ul>
         </div>
         <div>
-          <legend>Особенности:</legend>
+          <h3>Особенности:</h3>
           <ul>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                              name="slaider" checked>
-              Слайдер
+              <label class="checkbox" for="slider">Слайдер</label>
             </li>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                              name="block advantages">
-              Блок преимуществ
+              <label class="checkbox" for="block advantages">Блок преимуществ</label>
             </li>
 
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                              name="news" checked>
-              Новости
+              <label class="checkbox" for="news">Новости</label>
             </li>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                              name="gallery">
-              Галерея
+               <label class="checkbox" for="gallery">Галерея</label>
             </li>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                              name="cart">
-              Корзина
+              <label class="checkbox" for="cart">Корзина</label>
             </li>
           </ul>
         </div>
-      </form>
-      <button type="submit">Показать</button>
+          <button type="submit">Показать</button>
+      </form> 
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Cписок макетов</h2>
@@ -106,8 +108,7 @@
         <li class="catalog-item">
           <img src="#" width="90" height="90" alt="#">
           <div>
-            <h3>Седона</h3>
-            <a href="sedona.html"></a>
+              <h3><a href="#">Седона</a></h3>
             <p сlass="catalog-item-price">Информационны сайт для туристов</p>
             <a class="btn" href="#">9900 руб.</a>
           </div>
