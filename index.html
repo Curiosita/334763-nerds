@@ -18,40 +18,71 @@
         <li><a href="Contacts.html">Контакты</a></li>
       </ul>
       <a class="btn" href="#">Корзина</a>
-      <div class="promo">
-        <h1>Долго, дорого, скрупулезно</h1>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="btn" href="#">Узнать больше</a>
+        <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн<br>
+  для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн<br>
+  для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Скрупулезно</div>
+              <p>Математически выверенный дизайн<br>
+  для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+     </nav>
   </div>
 </header>
 <main>
   <div class="container">
     <div class="features">
       <div class="feature">
-        <h2>Вебсайты</h2>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <h2 class="feature-title">Вебсайты</h2>
+        <p clas="feature-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
         <a class="btn" href="#">Заказать</a>
       </div>
       <div class="feature">
-        <h2>Приложения</h2>
-        <p>Покорите топ-10 приложений в Appstore и Google Play</p>
+        <h2 class="feature-title">Приложения</h2>
+        <p class="feature-text">Покорите топ-10 приложений в Appstore и Google Play</p>
         <a class="btn" href="#">Заказать</a>
       </div>
       <div class="feature">
-        <h2>Презентации</h2>
-        <p>Вы даже не подозреваете насколько вы изумительны!</p>
+        <h2 class="feature-title">Презентации</h2>
+        <p class="feature-text">Вы даже не подозреваете насколько вы изумительны!</p>
         <a class="btn" href="#">Заказать</a>
       </div>
     </div>
     <div class="info">
       <div class="right column">
-        <h2 class="title-info">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+        <h2 class="info-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p class="info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
           покладая
           рук. как роботы.</p>
-          <h2>Выполняем заказы на разработку:</h2>
+          <h3>Выполняем заказы на разработку:</h3>
         <ul>
           <li>- Веб-сайтов любой сложности</li>
           <li>- мобильных приложений для iOS и Adroid</li>
@@ -60,7 +91,6 @@
       </div>
       <div class="left column">
         <img src="#" width="90" height="90" alt="Картинка Нердс">
-      </a>
       <b>c 2004 года любим точность во всем</b>
       <ul>
         <li>
@@ -77,10 +107,10 @@
         </li>
       </ul>
       <div class="partners">
-        <a class="partners"><img src="#" width="90" height="90" alt="дизайн академии HTML academy"></a>
-        <a class="partners"><img src="#" width="90" height="90" alt="дизайн Барбершоп Бородинскмй"></a>
-        <a class="partners"><img src="#" width="90" height="90" alt="дизай Pink"></a>
-        <a class="partners"><img src="#" width="90" height="90" alt="дизайн Mishka"></a>
+        <a class="partners-item"><img src="#" width="90" height="90" alt="дизайн академии HTML academy"></a>
+        <a class="partners-item"><img src="#" width="90" height="90" alt="дизайн Барбершоп Бородинскмй"></a>
+        <a class="partners-item"><img src="#" width="90" height="90" alt="дизай Pink"></a>
+        <a class="partners-item"><img src="#" width="90" height="90" alt="дизайн Mishka"></a>
       </div>
         </div>
       </div>
@@ -91,11 +121,24 @@
       </div>
       <div class="contacts">
         <h2 class="contacts-title">nerds design studio</h2>
-          <p>191186, Санкт-Петербург,<br>
+          <p class="cintacts =-text">191186, Санкт-Петербург,<br>
           ул.Большая Конюшенная, д.19/8
           </p>
           <p>тел.+7 (812)275-75-75</p>
         <a class="btn" href="#">Напишите нам</a>
+          <form class="contact-us">
+              <div class="сontact">
+                  <h3 class="contact-us-title">Напишите нам:</h3>
+                  <label class="contact-us-title" for="name">Ваше имя:</label>
+                  <input class="contact-us-title" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+                  <label class="contact-us-title" for="email">Ваш e-mail:</label>
+                  <input class="contact-us-title" type="email" id="email" name="email" placeholder="Для отправки ответа">
+                  <label class="contact-us-title" for="letter">Текст письма:</label>
+                  <input class="contact-us-title" type="textarea" id="letter" name="letter" placeholder="В свободной форме">
+                  <button>Отправить</button>
+              </div>
+          </form>
+          </div>
       </div>
     </div>
 </main>
@@ -106,8 +149,8 @@
     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
   </section>
   <section class="bonus">
-    <h3>Давайте дружить, это выгодно!</h3>
-    <p>Скидка 10% для друзей из социальных сетей</p>
+    <h3 class="bonus-title">Давайте дружить, это выгодно!</h3>
+    <p class="bonu">Скидка 10% для друзей из социальных сетей</p>
   </section>
 </footer>
 </body>
