@@ -65,11 +65,11 @@
           <h3 class="title-filter">Особенности:</h3>
           <ul>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                             id="slider" name="slaider" checked>
+                                             id="slider" name="slider" checked>
               <label class="checkbox" for="slider">Слайдер</label>
             </li>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                             id="advantages" name="block advantages">
+                                             id="block advantages" name="block advantages">
               <label class="checkbox" for="block advantages">Блок преимуществ</label>
             </li>
 
@@ -170,7 +170,7 @@
     </div>
     <div class="paginator">
       <ul class="paginator-list">
-        <li class=paginator-item-current><a>1</a></li>
+        <li class=paginator-item-current>1</li>
         <li class="paginator-item"><a href="#">2</a></li>
         <li class="paginator-item"><a href="#">3</a></li>
         <li class="paginator-item"><a href="#">Cледующая</a></li>
@@ -203,14 +203,20 @@
   </section>
 </footer>
 <form class="contact-us">
-  <div class="сontact-us">
+  <div class="wrapper сontact-us">
     <h3 class="contact-us-title">Напишите нам:</h3>
+      <div class="user-block">
     <label class="contact-us-title" for="name">Ваше имя:</label>
     <input class="contact-us-title" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="email-block">
     <label class="contact-us-title" for="email">Ваш e-mail:</label>
     <input class="contact-us-title" type="email" id="email" name="email" placeholder="Для отправки ответа">
+      </div>
+      <div class="text-block">
     <label class="contact-us-title" for="letter">Текст письма:</label>
     <input class="contact-us-title" type="textarea" id="letter" name="letter" placeholder="В свободной форме">
+      </div>
     <button>Отправить</button>
   </div>
 </form>
