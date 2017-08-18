@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-   <link href="css/style.css" rel="stylesheet"> 
+   <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
 <body>
 <header class="page-header">
@@ -18,7 +19,7 @@
         <li class="site-navigation-item"><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
         <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
       </ul>
-      <a class="btn-cart" href="#">Корзина</a>
+      <a class="btn-cart" href="cart.html">Корзина</a>
       <div class="promo">
         <h1 class="promo-title">Магазин готовых шаблонов</h1>
       </div>
@@ -203,6 +204,7 @@
     <p class="bonus-text">Скидка 10% для друзей из социальных сетей</p>
   </section>
 </footer>
+<section class="modal modal-login">
 <form class="contact-us">
   <div class="wrapper сontact-us">
     <h3 class="contact-us-title">Напишите нам:</h3>
@@ -219,7 +221,9 @@
     <input class="contact-us-title" type="text" id="text" name="text" placeholder="В свободной форме">
       </div>
     <button>Отправить</button>
+      <button class="modal-close" type="button">Закрыть</button>
   </div>
 </form>
+</section>
 </body>
 </html>
