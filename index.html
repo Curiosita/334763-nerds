@@ -3,23 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-   <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
   <div class="container">
-    <a class="header-logo">
+    <div class="header-logo"><a>
       <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип дизайн студии Нердс">
     </a>
+    </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li class="site-navigation-item"><a href="studia.html">Студия</a></li>
         <li class="site-navigation-itam"><a href="clients.html">Клиенты</a></li>
         <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
       </ul>
-      <a class="btn-cart" href="cart.html">Корзина</a> 
+      <div class="cart"><a href="cart.html">Корзина</a></div>
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -30,27 +32,27 @@
           <label for="btn-3"></label>
         </div>
         <div class="slides">
-          <div class="slide">
-            <div class="slide-text">
+          <div class="slide-1">
+            <div class="slide-item">
               <div class="slide-title">Долго, дорого, скрупулезно</div>
-              <p>Математически выверенный дизайн<br>
+              <p class="slide-text">Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
               <a class="btn-slide" href="#">Узнать больше</a>
             </div>
           </div>
-          <div class="slide">
-            <div class="slide-text">
+          <div class="slide-2">
+            <div class="slide-item">
               <div class="slide-title">Дорого, скрупулезно</div>
-              <p>Математически выверенный дизайн<br>
-                для вашего сайта или мобильного приложения.</p>
+              <p class="slide-text">Никакого креатива, только математические формулы<br>
+                для расчета идеальных пропорций.</p>
               <a class="btn-slide" href="#">Узнать больше</a>
             </div>
           </div>
-          <div class="slide">
-            <div class="slide-text">
+          <div class="slide-3">
+            <div class="slide-item">
               <div class="slide-title">Скрупулезно</div>
-              <p>Математически выверенный дизайн<br>
-                для вашего сайта или мобильного приложения.</p>
+              <p class="slide-text">Работать днем как все? Мы против этого.<br>
+                Ближе к полуночи работа только начинается.</p>
               <a class="btn-slide" href="#">Узнать больше</a>
             </div>
           </div>
@@ -64,37 +66,38 @@
     <section class="features">
       <div class="feature">
         <h2 class="feature-title">Вебсайты</h2>
-          <img src="img/illustration-1.png" width="300" height="152" alt="Иллюстрация 1">
+        <img src="img/illustration-1.png" width="300" height="146" alt="Иллюстрация 1">
         <p class="feature-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
         <a class="btn-feature order-web" href="#">Заказать</a>
       </div>
       <div class="feature">
         <h2 class="feature-title">Приложения</h2>
-          <img src="img/illustration-2.png" width="300" height="152" alt="Иллюстрация 2"> 
+        <img src="img/illustration-2.png" width="300" height="146" alt="Иллюстрация 2">
         <p class="feature-text">Покорите топ-10 приложений в Appstore и Google Play</p>
         <a class="btn-feature order-apps" href="#">Заказать</a>
       </div>
       <div class="feature">
         <h2 class="feature-title">Презентации</h2>
-          <img src="img/illustration-3.png" width="300" height="152" alt="Иллюстрация 3"> 
+        <img src="img/illustration-3.png" width="300" height="146" alt="Иллюстрация 3">
         <p class="feature-text">Вы даже не подозреваете насколько вы изумительны!</p>
         <a class="btn-feature order-presentation" href="#">Заказать</a>
       </div>
     </section>
     <div class="info">
-      <div class="right column">
+      <div class="left-column">
         <h2 class="info-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p class="info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.Работаем не покладая рук. как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Adroid</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <p class="info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+          креатива.Работаем не покладая рук. как роботы.</p>
+        <h3 class=info-title-list>Выполняем заказы на разработку:</h3>
+        <ul class="list-orders">
+          <li class="list-oreder-item">Веб-сайтов любой сложности</li>
+          <li class="list-order-item">Мобильных приложений для iOS и Adroid</li>
+          <li class="list-order-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div class="left column">
-        <img src="img/nerds-illustration.png" width="306" height="177" alt="Картинка Нердс">
-        <b>c 2004 года любим точность во всем</b>
+      <div class="right-column">
+        <img src="img/nerds-illustration.png" width="360" height="208" alt="Картинка Нердс">
+        <b>c 2004 года любим точность во всем:</b>
         <ul>
           <li>
             <span>146%</span>
@@ -110,10 +113,10 @@
           </li>
         </ul>
         <div class="partners">
-          <a class="partners-item"><img src="img/logo-1.png" width="230" height="75" alt="дизайн академии HTML academy"></a>
-          <a class="partners-item"><img src="img/logo-2.png" width="220" height="90" alt="дизайн Барбершоп Бородинскмй"></a>
-          <a class="partners-item"><img src="img/logo-3.png" width="206" height="70" alt="дизай Pink"></a>
-          <a class="partners-item"><img src="img/logo-4.png" width="190" height="90" alt="дизайн Mishka"></a>
+          <a class="partners-item"><img src="img/logo-1.png" width="199" height="68" alt="дизайн академии HTML academy"></a>
+          <a class="partners-item"><img src="img/logo-2.png" width="209" height="90" alt="дизайн Барбершоп Бородинскмй"></a>
+          <a class="partners-item"><img src="img/logo-3.png" width="185" height="52" alt="дизай Pink"></a>
+          <a class="partners-item"><img src="img/logo-4.png" width="173" height="84" alt="дизайн Mishka"></a>
         </div>
       </div>
     </div>
@@ -144,25 +147,25 @@
   </section>
 </footer>
 <section class="modal modal-login">
-<form class="contact-us">
-  <div class="wrapper сontact-us">
-    <h3 class="contact-us-title">Напишите нам:</h3>
+  <form class="contact-us">
+    <div class="wrapper сontact-us">
+      <h3 class="contact-us-title">Напишите нам:</h3>
       <div class="user-block">
-    <label class="contact-us-title" for="name">Ваше имя:</label>
-    <input class="contact-us-title" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+        <label class="contact-us-title" for="name">Ваше имя:</label>
+        <input class="contact-us-title" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
       </div>
       <div class="email-block">
-    <label class="contact-us-title" for="email">Ваш e-mail:</label>
-    <input class="contact-us-title" type="email" id="email" name="email" placeholder="Для отправки ответа">
+        <label class="contact-us-title" for="email">Ваш e-mail:</label>
+        <input class="contact-us-title" type="email" id="email" name="email" placeholder="Для отправки ответа">
       </div>
       <div class="text-block">
-    <label class="contact-us-title" for="text">Текст письма:</label>
-    <input class="contact-us-title" type="text" id="text" name="text" placeholder="В свободной форме">
+        <label class="contact-us-title" for="text">Текст письма:</label>
+        <input class="contact-us-title" type="text" id="text" name="text" placeholder="В свободной форме">
       </div>
-    <button>Отправить</button>
+      <button>Отправить</button>
       <button class="modal-close" type="button">Закрыть</button>
-  </div>
-</form>
+    </div>
+  </form>
 </section>
 </body>
 </html>

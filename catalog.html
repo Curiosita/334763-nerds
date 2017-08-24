@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-   <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
   <div class="container">
-    <a class="header-logo" href="index.html">
+    <div class="header-logo"><a href="index.html">
       <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип дизайн студии Нердс">
     </a>
+    </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li class="site-navigation-item"><a href="studia.html">Студия</a></li>
@@ -19,7 +21,7 @@
         <li class="site-navigation-item"><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
         <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
       </ul>
-      <a class="btn-cart" href="cart.html">Корзина</a>
+      <div class="cart"><a href="cart.html">Корзина</a></div>
       <div class="promo">
         <h1 class="promo-title">Магазин готовых шаблонов</h1>
       </div>
@@ -73,7 +75,7 @@
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                              id="block-advantages" name="block-advantages">
               <label class="checkbox" for="block-advantages">Блок преимуществ</label>
-              </li>
+            </li>
 
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                              id="news" name="news" checked>
@@ -101,8 +103,8 @@
         <li class="sort-list-item">по названию</li>
       </ul>
       <ul class="arrow-list">
-        <li class="upper"><a href="#"></a></li>
-        <li class="lower"><a href="#"></a></li>
+        <li class="upper"><a href="#">Вверх</a></li>
+        <li class="lower"><a href="#">Вниз</a></li>
       </ul>
     </div>
     <div class="catalog">
@@ -110,7 +112,7 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <a class="catalog-item-link" href="catalog-item.html">
-            <img src="img/img-sedona.jpg" width="360" height="570" alt="Sedona image">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona image">
           </a>
           <div class="catalog-item-hover">
             <h3 class="catalog-title"><a href="catalog-item.html">Sedona</a></h3>
@@ -120,7 +122,7 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item-link" href="catalog-item.html">
-            <img src="img/img-pink.jpg" width="360" height="570" alt="Pink image">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink image">
           </a>
           <div class="catalog-item-hover">
             <h3 class="catalog-title"><a href="catalog-item.htnl">Pink</a></h3>
@@ -130,7 +132,7 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item-link" href="catalog-item.html">
-            <img src="img/img-barbershop.jpg" width="360" height="570" alt="Barbershop image">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop image">
           </a>
           <div class="catalog-item-hover">
             <h3 class="catalog-title"><a href="#">Barbershop</a></h3>
@@ -139,8 +141,8 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a class="catalog-item-link" href="catalog-item.html">
-            <img src="img/img-mishka.jpg" width="360" height="570" alt="Mishka image">
+          <a class="catalog-item-link" href="">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka image">
           </a>
           <div class="catalog-item-hover">
             <h3 class="catalog-title"><a href="catalog-item.html">Mishka</a></h3>
@@ -150,7 +152,7 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item-link" href="catalog-item.html">
-            <img src="img/img-aplus.jpg" width="360" height="570" alt="A+ image">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="A+ image">
           </a>
           <div class="catalog-item-hover">
             <h3 class="catalog-title"><a href="#">A+</a></h3>
@@ -160,7 +162,7 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item-link" href="catalog-item.html">
-            <img src="img/img-kvast.jpg" width="360" height="570" alt="Kvast image">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast image">
           </a>
           <div class="catalog-item-hover">
             <h3 class="catalog-title"><a href="">Kvast</a></h3>
@@ -170,12 +172,12 @@
         </li>
       </ul>
     </div>
-    <div class="paginator">
-      <ul class="paginator-list">
-        <li class=paginator-item-current>1</li>
-        <li class="paginator-item"><a href="#">2</a></li>
-        <li class="paginator-item"><a href="#">3</a></li>
-        <li class="paginator-item"><a href="#">Cледующая</a></li>
+    <div class="pagination">
+      <ul class="pagination-list">
+        <li class=pagination-item-current>1</li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">Cледующая</a></li>
       </ul>
     </div>
   </div>
@@ -185,7 +187,7 @@
     </div>
     <div class="contacts">
       <h2 class="contacts-title">nerds design studio</h2>
-      <p class="cintacts-text">191186, Санкт-Петербург,<br>
+      <p class="contacts-text">191186, Санкт-Петербург,<br>
         ул.Большая Конюшенная, д.19/8
       </p>
       <p>тел.+7 (812)275-75-75</p>
@@ -205,25 +207,25 @@
   </section>
 </footer>
 <section class="modal modal-login">
-<form class="contact-us">
-  <div class="wrapper сontact-us">
-    <h3 class="contact-us-title">Напишите нам:</h3>
+  <form class="contact-us">
+    <div class="wrapper сontact-us">
+      <h3 class="contact-us-title">Напишите нам:</h3>
       <div class="user-block">
-    <label class="contact-us-title" for="name">Ваше имя:</label>
-    <input class="contact-us-title" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+        <label class="contact-us-title" for="name">Ваше имя:</label>
+        <input class="contact-us-title" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
       </div>
       <div class="email-block">
-    <label class="contact-us-title" for="email">Ваш e-mail:</label>
-    <input class="contact-us-title" type="email" id="email" name="email" placeholder="Для отправки ответа">
+        <label class="contact-us-title" for="email">Ваш e-mail:</label>
+        <input class="contact-us-title" type="email" id="email" name="email" placeholder="Для отправки ответа">
       </div>
       <div class="text-block">
-    <label class="contact-us-title" for="text">Текст письма:</label>
-    <input class="contact-us-title" type="text" id="text" name="text" placeholder="В свободной форме">
+        <label class="contact-us-title" for="text">Текст письма:</label>
+        <input class="contact-us-title" type="text" id="text" name="text" placeholder="В свободной форме">
       </div>
-    <button>Отправить</button>
+      <button>Отправить</button>
       <button class="modal-close" type="button">Закрыть</button>
-  </div>
-</form>
+    </div>
+  </form>
 </section>
 </body>
 </html>

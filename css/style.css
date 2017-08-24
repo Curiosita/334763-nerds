@@ -1,40 +1,223 @@
-body{
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size:16px;
-    font-weight:300;
-    font-style: normal;
-    line-height: 24px; 
-    color:#000000;
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+
 }
 
-.slide-title{
-    font-size:55px;
-    font-weight: 700;
-    font-style: bold;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.promo-title {
+    font-size: 55px;
     line-height: 55px;
 }
 
-.feature-title{
-    font-size:24px;
+.title-filter h3 {
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.filters ul,
+.sort ul,
+.catalog ul,
+.pagination ul {
+    list-style: none;
+    line-height: 30px;
+
+}
+
+.pagination-item a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.pagination-item-current a {
+    background-color: #ffffff;
+}
+
+.pagination-item a:hover {
+    background-color: #f7f7f7;
+}
+
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: #ffffff;
+}
+
+.filter-input:hover + label {
+    color: lightgrey;
+}
+
+.filter-input:focus + label {
+    color: black;
+}
+
+.filter-input:disabled + label {
+    color: #000000;
+
+    opacity: 0.5;
+}
+
+.contact-us-title input {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid #eff0f0;
+}
+
+.contact-us-title input:focus {
+    border-color: black;
+}
+
+.header-logo a:hover {
+    color: #bdbdbd;
+}
+
+.header-logo a:focus {
+    color: #e1e1e1;
+}
+
+.site-navigation,
+.cart {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.site-navigation {
+    list-style: none;
+
+}
+
+.main-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.cart a:hover {
+    color: #fb565a;
+
+}
+
+.site-navigation a:focus,
+.cart a:focus {
+    color: #d4e6de;
+
+}
+
+.slide-title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+.slide-text {
+    text-transform: none;
+}
+
+.container {
+    background-color: white;
+}
+
+.feature {
+    text-align: left;
+}
+
+.feature h3 {
+    font-size: 24px;
     line-height: 30px;
     font-weight: 700;
 }
 
-.info-title{
-    font-size:45px;
+.feature-text {
+    text-transform: none;
+}
+
+.info {
+    text-transform: none;
+
+}
+
+.left-column ul,
+.right-column ul {
+    list-style: none;
+}
+
+.info-title {
+    font-size: 45px;
     line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.info-title-list {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+}
+
+.bonus-title {
+    font-size: 36px;
+    line-height: 36px;
+
+}
+
+.right-column span {
+    font-size: 45px;
+    line-height: 10.6px;
+}
+
+.right-column b {
+    text-transform: uppercase;
     font-weight: 700;
 }
 
+.button {
+    font: inherit;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: grey;
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: grey;
+}
+
+.page-footer a:hover,
+.page-footer a:focus,
+.page-footer a:active {
+    text-decoration: none;
+}
+
 .visually-hidden {
-  position: absolute;
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
