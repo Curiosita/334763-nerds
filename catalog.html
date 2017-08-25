@@ -86,7 +86,7 @@
               <label class="checkbox" for="gallery">Галерея</label>
             </li>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                             id="cart" name="cart">
+                                             id="cart" name="cart" disabled>
               <label class="checkbox" for="cart">Корзина</label>
             </li>
           </ul>
@@ -190,37 +190,39 @@
       <p class="contacts-text">191186, Санкт-Петербург,<br>
         ул.Большая Конюшенная, д.19/8
       </p>
-      <p>тел.+7 (812)275-75-75</p>
+      <p class="contacts-text">тел.+7 (812)275-75-75</p>
       <a class="btn-contact-us" href="#">Напишите нам</a>
     </div>
   </section>
 </main>
 <footer class="page-footer">
-  <section class="social-link">
-    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  <div class="container">
+    <section class="social-link">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    </section>
+    <section class="bonus">
+      <h3 class="bonus-title">Давайте дружить, это выгодно!</h3>
+      <p class="bonus-text">Скидка 10% для друзей из социальных сетей</p>
   </section>
-  <section class="bonus">
-    <h3 class="bonus-title">Давайте дружить, это выгодно!</h3>
-    <p class="bonus-text">Скидка 10% для друзей из социальных сетей</p>
-  </section>
+  </div>
 </footer>
 <section class="modal modal-login">
-  <form class="contact-us">
+  <form class="write-us">
     <div class="wrapper сontact-us">
-      <h3 class="contact-us-title">Напишите нам:</h3>
+      <h3 class="write-us-title">Напишите нам:</h3>
       <div class="user-block">
-        <label class="contact-us-title" for="name">Ваше имя:</label>
-        <input class="contact-us-title" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+        <label class="write-us-title-item" for="name">Ваше имя:</label>
+        <input class="write-us" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
       </div>
       <div class="email-block">
-        <label class="contact-us-title" for="email">Ваш e-mail:</label>
-        <input class="contact-us-title" type="email" id="email" name="email" placeholder="Для отправки ответа">
+        <label class="write-us-title-item" for="email">Ваш e-mail:</label>
+        <input class="write-us" type="email" id="email" name="email" placeholder="Для отправки ответа">
       </div>
       <div class="text-block">
-        <label class="contact-us-title" for="text">Текст письма:</label>
-        <input class="contact-us-title" type="text" id="text" name="text" placeholder="В свободной форме">
+        <label class="write-us-title-item" for="text">Текст письма:</label>
+        <input class="write-us" type="text" id="text" name="text" placeholder="В свободной форме">
       </div>
       <button>Отправить</button>
       <button class="modal-close" type="button">Закрыть</button>
