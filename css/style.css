@@ -281,7 +281,6 @@ a {
 
 }
 
-.left-column ul,
 .right-column ul {
     list-style: none;
 }
@@ -298,15 +297,17 @@ a {
     text-transform: uppercase;
 }
 
-.right-column span {
-    font-size: 45px;
-    line-height: 10.6px;
-    font-weight: 700;
+.right-column {
+    padding-top: 181px;
+    background-position: 32px -8px;
 }
 
-.right-column b {
-    text-transform: uppercase;
-    font-weight: 700;
+csption {
+    font-size: 16px;
+    font-weight: 24px;
+    caption-side: top;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .bonus-title {
@@ -343,14 +344,12 @@ a {
 .btn {
 
     font: inherit;
-
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
     text-transform: uppercase;
     background-color: grey;
     border: none;
-
     width: 260px;
     height: 50px;
 }
@@ -466,7 +465,7 @@ a {
 html, body {
 }
 
-.img {
+img {
     max-width: 100%;
     height: auto;
 }
@@ -479,7 +478,7 @@ html, body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
 .main-navigation-wrapper {
@@ -506,7 +505,6 @@ html, body {
     display: flex;
     width: 160px;
     height: 70px;
-    margin: 20px;
     margin-right: 200px;
 
 }
@@ -567,7 +565,7 @@ html, body {
     margin: 0 auto;
 }
 
-.slider input[type=radio] {
+.slider input[type="radio"] {
     position: absolute;
     opacity: 0;
 }
@@ -594,12 +592,6 @@ html, body {
     cursor: pointer;
 }
 
-#btn-1:checked ~ .slider-controls label [for="btn-1"],
-#btn-2:checked ~ .slider-controls label [for="btn-2"],
-#btn-3:checked ~ .slider-controls label [for="btn-3"] {
-    background: blue;
-}
-
 .slide {
     position: absolute;
     top: 0;
@@ -610,7 +602,7 @@ html, body {
 }
 
 .slide-text {
-    width: 400px;
+    width: 460px;
     padding: 0 30px;
 
 }
@@ -618,7 +610,6 @@ html, body {
 .btn-slide {
     display: block;
     width: 260px;
-    height: 50px;
     padding: 10px 0px;
     margin-top: 40px;
     font-size: 16px;
@@ -661,6 +652,12 @@ html, body {
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
     display: block;
+}
+
+#btn-1:checked ~ .slider-controls label [for="btn-1"],
+#btn-2:checked ~ .slider-controls label [for="btn-2"],
+#btn-3:checked ~ .slider-controls label [for="btn-3"] {
+    background-color: #eeeeee;
 }
 
 .features {
@@ -724,6 +721,7 @@ html, body {
 
 .map {
     width: 100%;
+    position: relative;
 }
 
 .social-link {
@@ -740,13 +738,19 @@ html, body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    font-size: 0;
+    margin-right: 35px;
 }
 
 .contacts {
-    position: relative;
+    position: absolute;
     width: 320px;
     height: 310px;
     margin: 0 auto;
+    top: 40px;
+    left: 50px;
+    background: white;
+    text-align: center;
 
 }
 
@@ -762,6 +766,8 @@ html, body {
     background-color: #fb565a;
     text-align: center;
     border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 50px;
 }
 
 .bonus {
@@ -770,6 +776,7 @@ html, body {
 
 .write-us {
     display: none;
+
 }
 
 /*cетка каталога*/
@@ -798,6 +805,72 @@ html, body {
     min-height: 770px;
 }
 
+.input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    line-height: 18px;
+    font-size: 16px;
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/radio-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+input[type="radio"]:checked + label::before {
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    line-height: 18px;
+    font-size: 16px;
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .container-sort {
     flex-direction: column;
     width: 760px;
@@ -807,7 +880,6 @@ html, body {
 .sort-list {
     display: flex;
     justify-content: space-between;
-
 }
 
 .sort-item {
@@ -855,36 +927,37 @@ html, body {
     margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .pagination li {
+    display: inline-block;
     margin-right: 10px;
+    text-align: center;
 }
 
 .pagination a {
     display: block;
     width: 50px;
     height: 50px;
-    text-align: center;
 }
 
 .pagination-item-current {
+    width: 48px;
+    height: 48px;
     outline: 2px solid rgba(0, 0, 0, 0.1);
 
 }
 
+.pagination-item-next a {
+    width: 260px;
+    background: #eeeeee;
+}
+
 table {
-    text-align: center;
     text-align: center;
     vertical-align: middle;
 }
 
-caption {
-    caption-side: top;
-    text-align: center;
-    vertical-align: middle;
-}
 
 
 
