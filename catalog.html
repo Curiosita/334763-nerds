@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
-<header class="page-header">
+<header class="page-header page-header-catalog">
   <div class="container">
     <div class="main-navigation-wrapper">
       <nav class="main-navigation">
@@ -41,7 +41,7 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filters" method="get" action="http://echo.htmlacademy.ru">
             <div class="range-filter">
-              <h3 class="title-filter">Стоимость:</h3>
+              <h3 class="title-filter-price">Стоимость:</h3>
               <div class="range-controls">
                 <div class="scale">
                   <div style="width:70%" class="bar">
@@ -50,13 +50,13 @@
                   <div class="toggle toggle-max"></div>
                 </div>
               </div>
-            </div>
             <div class="price-controls">
               от <input name="min-price" class="min-price" type="text" value="0">
               до <input name="max-price" class="max-price" type="text" value="15000">
             </div>
-            <div>
-              <h3 class="title-filter">Сетка:</h3>
+              </div>
+            <div class="net">
+              <h3 class="title-filter-net">Сетка:</h3>
               <ul>
                 <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio"
                                                  id="adaptive" name="product-group" value="adaptive" checked>
@@ -72,8 +72,8 @@
                 </li>
               </ul>
             </div>
-            <div>
-              <h3 class="title-filter">Особенности:</h3>
+            <div class="blocks">
+              <h3 class="title-filter-blocks">Особенности:</h3>
               <ul>
                 <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
                                                  type="checkbox"
@@ -113,9 +113,9 @@
             <h2 class="visually-hidden">Сортировка</h2>
             <h3 class="sort-title">Сортировать:</h3>
             <ul class="sort-list">
-                <li class="sort-list-item"><a href="">по цене</a></li>
-                <li class="sort-list-item"><a href="">по типу</a></li>
-                <li class="sort-list-item"><a href="">по названию</a></li>
+              <li class="sort-list-item"><a href="">по цене</a></li>
+              <li class="sort-list-item"><a href="">по типу</a></li>
+              <li class="sort-list-item"><a href="">по названию</a></li>
             </ul>
             <ul class="arrow-list">
               <li class="upper"><a class="upper-link" href="#">Вверх</a></li>
@@ -200,9 +200,10 @@
     </div>
   </div>
   <section class="map">
-    <div class="main-map">
-      <img src="img/map.png" width="1436" height="420" alt="Карта">
-    </div>
+    <!--<img src="img/map.png" width="1436" height="420" alt="Карта">-->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d992.3928210098592!2d30.320608508720113!3d59.93894187875631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JEuINCa0L7QvdGO0YjQtdC90L3QsNGPIDE5Lzg!5e0!3m2!1sen!2suk!4v1504626558058"
+      allowfullscreen></iframe>
     <div class="contacts">
       <h2 class="contacts-title">nerds design studio</h2>
       <p class="contacts-text">191186, Санкт-Петербург,<br>

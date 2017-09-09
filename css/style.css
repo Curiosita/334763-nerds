@@ -1,7 +1,6 @@
 body {
     margin: 0 auto;
     padding: 0;
-    width: 1440px;
 
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -68,8 +67,13 @@ img {
 }
 
 .page-header {
-    margin-bottom: 70px;
-    background-color: #eeeeee;
+  margin-bottom: 75px;
+  background-color: #eeeeee;
+}
+
+.page-header-catalog {
+  padding-bottom: 87px;
+  margin-bottom: 40px;
 }
 
 .header-logo {
@@ -91,7 +95,7 @@ img {
 }
 
 .main-navigation-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .main-navigation {
@@ -207,7 +211,8 @@ img {
 }
 
 .slide-text {
-    width: 520px;
+  width: 520px;
+  padding-top: 72px;
 }
 
 .slide-title {
@@ -215,7 +220,6 @@ img {
     line-height: 55px;
     font-weight: 500;
     text-transform: none;
-    margin-top: 70px;
 }
 
 .slide p {
@@ -224,10 +228,10 @@ img {
 }
 
 .slider {
-    position: relative;
-    width: 1160px;
-    height: 428px;
-    margin: 0 auto;
+  position: relative;
+  width: 1160px;
+  height: 428px;
+  margin: 0 auto;
 }
 
 .slider input[type="radio"] {
@@ -237,7 +241,7 @@ img {
 
 .slider-controls {
     position: absolute;
-    bottom: 116px;
+    bottom: 101px;
     left: 50%;
     width: 200px;
     height: 10px;
@@ -279,9 +283,9 @@ img {
 }
 
 .slide:nth-child(1) {
-    background-image: url("../img/slide1.png");
-    background-repeat: no-repeat;
-    background-position: 433px 10px;
+  background-image: url(../img/slide1.png);
+  background-repeat: no-repeat;
+  background-position: 429px 14px;
 }
 
 .slide:nth-child(2) {
@@ -325,6 +329,7 @@ img {
 }
 
 .features {
+  position: relative;
     width: 100%;
     margin-bottom: 80px;
 
@@ -401,8 +406,8 @@ img {
 .btn-feature-order-apps {
     display: block;
     width: 160px;
-    padding: 11px 0;
-    margin-top: 37px;
+  padding: 10px 0px;
+  margin-top: 35px;
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
@@ -430,8 +435,8 @@ img {
 .btn-feature-order-presentation {
     display: block;
     width: 160px;
-    padding: 11px 0px;
-    margin-top: 37px;
+  padding: 10px 0px;
+  margin-top: 35px;
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
@@ -456,39 +461,49 @@ img {
     opacity: 1.7;
 }
 
-.features::after {
-    width: 100%;
-    height: 2px;
-    background-color: #eeeeee;
 
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
+.features::after {
+  width: 1165px;
+  height: 2px;
+  background-color: #eeeeee;
+  position: absolute;
+  content: "";
+  bottom: -81px;
+  left: 3px;
 }
 
 .info {
-    display: flex;
-    text-transform: none;
-    margin-top: 122px;
+  display: flex;
+  text-transform: none;
+  margin-top: 122px;
+  margin-bottom: 13px;
 }
 
 .left-column {
-    width:660px;
-    
+  width: 660px;
 }
 
 .info-title {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 500;
+  margin-bottom: 31px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  width: 664px;
+}
 
+.info-text {
+  padding-bottom: 19px;
+  font-size: 16px;
+}
+
+.list-orders {
+  padding: 0 0 0 35px;
 }
 
 .list-orders li {
     list-style: none;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .list-orders ::before {
@@ -498,50 +513,76 @@ img {
 
     position: absolute;
     content: "";
-    top: 25px;
-    left: -30px;
+  top: 11px;
+  left: -36px;
 }
 
 .right-column {
-    background-image: url("../img/nerds-illustration.jpg");
-    background-repeat: no-repeat;
-    padding-top: 205px;
-    background-position: 140px 1px;
+  width: 500px;
 }
 
 .info-title-list {
+  padding-bottom: 10px;
     text-transform: uppercase;
+   font-size: 16px;
 }
 
-
-table {
-    border-collapse:;
+.about-us img {
+  padding-left: 140px;
 }
 
-.caption-title {
-    font-weight: 700;
-    margin-bottom: 50px;
-    margin-top: 40px;
-    text-transform: uppercase;
+.about-us-heading {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding-left: 157px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.percent {
-    font-size: 45px;
-    line-height: 10.6px;
-    font-weight: 700;
-    text-transform: none;
-    padding-bottom: 30px;
+.about-us-plus {
+  display: flex;
+  list-style: none;
+  padding-left: 138px;
+}
 
+.about-us-plus li {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-data {
+  font-size: 45px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 31px;
+}
+
+.about-us-text {
+  line-height: 18px;
+}
+
+.about-us-data-sup {
+  font-size: 28px;
+}
+
+.about-us-146 {
+  margin-right: 24px;
+}
+
+.about-us-100 {
+  margin-right: 20px;
 }
 
 .partners {
     display: flex;
     margin: 0;
     padding: 0;
+    padding-top: 29px;
     justify-content: space-around;
     align-items: center;
     min-height: 185px;
-    margin-bottom: 35px;
+    margin-bottom: 71px;
     position: relative;
 
 }
@@ -559,20 +600,48 @@ table {
 }
 
 .partners::before {
-    width: 100%;
-    height: 2px;
-    background-color: #eeeeee;
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee;
 
-    position: absolute;
-    content: "";
-    top: 20px;
-    left: 0;
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  left: 0;
+
 }
 
-.partners a {
-    color: black;
-    opacity: 0.3;
+
+.partners-item {
+  margin-left: -22px;
+  color: black;
+  opacity: 0.3;
+  position: relative;
 }
+
+
+.partners-item::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 80px;
+  background-color: red;
+  top: 0px;
+  left: 219px;
+}
+
+/*
+из-за того что картинки разной высоты и полоски не ровно по вертикали. Нужно в html на .partners-item задать доп классы
+ и выровнять полоски по высоте - top
+ .partners-item-borodinski::before {
+    rules
+ }
+и так со всеми полосками, которые не поддаются дрессировке
+
+есть другой путь - перевырезать картинки.. но мне кажется первый быстрее
+
+и чтоб их было видно я их сделала розовыми, перекрасишь как поправишь
+*/
 
 .partners a:hover {
     color: black;
@@ -585,15 +654,6 @@ table {
     opacity: 0.7;
 }
 
-.partners-item::before {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 52px;
-    background-color: #eeeeee;
-    top: 60px;
-
-}
 
 .partners-item:nth-child(4)::before {
     display: none;
@@ -603,6 +663,13 @@ table {
 .map {
     width: 100%;
     position: relative;
+    margin-bottom: 67px;
+}
+
+iframe {
+  width: 100%;
+  height: 416px;
+  border: 0;
 }
 
 .contacts {
@@ -610,8 +677,8 @@ table {
     width: 320px;
     height: 310px;
     margin: 0 auto;
-    top: 40px;
-    left: 50px;
+    top: 53px;
+    left: 82px;
     background: white;
     text-align: center;
 
@@ -620,8 +687,8 @@ table {
 .btn-contact-us {
     display: block;
     width: 220px;
-    padding: 10px 0px;
-    margin-top: 40px;
+    padding: 11px 0px;
+    margin-top: 37px;
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
@@ -634,13 +701,21 @@ table {
 
 
 .contacts-title {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 21px;
+  margin-left: -26px;
 }
 
 .contacts-text {
     text-transform: none;
+  text-align: left;
+  padding-left: 53px;
+  width: 247px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .page-footer .container {
@@ -655,26 +730,23 @@ table {
 
 
 .social-link {
-    width: 360px;
-    margin-right: 140px;
+    position: relative;
+    margin-right: 122px;
     display: flex;
     justify-content: space-between;
 
 }
 
 .social-btn {
-    display: inline-block;
+    margin-right: 10px;
     background: #e1e1e1;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     font-size: 0;
-    margin-right: 35px;
+
 }
 
-.social-link {
-    position: relative;
-}
 
 .social-btn-vk::before {
     position: absolute;
@@ -702,8 +774,8 @@ table {
     height: 22px;
 
     background: #e1e1e1;
-    top: 30px;
-    left: 155px;
+    top: 23px;
+    left: 122px;
 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='22' viewBox='0 0 12 22'%3E%3Cpath fill='%23FFF' d='M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z'/%3E%3C/svg%3E ");
     background-repeat: no-repeat;
@@ -721,8 +793,8 @@ table {
     height: 21px;
 
     background: #e1e1e1;
-    top: 30px;
-    left: 275px;
+   top: 27px;
+   left: 210px;
 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21'%3E%3Cpath fill='%23FFF' d='M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z'/%3E%3C/svg%3E ");
     background-repeat: no-repeat;
@@ -740,6 +812,8 @@ table {
 
 
 .bonus-title {
+    margin: 0;
+    margin-left: 7px;
     font-size: 36px;
     line-height: 36px;
     text-transform: none;
@@ -747,6 +821,8 @@ table {
 }
 
 .bonus-text {
+  margin-left: 6px;
+  margin-top: 10px;
     text-transform: none;
 }
 
@@ -767,18 +843,20 @@ table {
     margin:0;
     margin-top: 50px;
     margin-right: 25px;
-    
+
 }
 
 .inner-page .promo {
     display: flex;
     text-align: center;
-    margin-left: 220px;
+    margin-left: 217px;
     padding-bottom: 20px;
+    padding-top: 71px;
 }
 
 
 .promo-title {
+  margin: 0;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -796,19 +874,34 @@ table {
 .filters {
     width: 260px;
     min-height: 770px;
-    
+
 }
 
 .filters {
     text-transform: none;
 }
 
-.title-filter h3 {
+.range-filters {
+    display: flex;
+    margin-bottom: 60px;
+    
+    
+}
+
+.title-filter-price{
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 15px;
 }
+
+.title-filter h3 {
+    margin: 0;
+    padding: 0;   
+}
+
 
 .range-filter {
     width: 260px;
@@ -819,11 +912,12 @@ table {
 .range-controls {
     position: relative;
     height: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     padding: 0 20px;
     background: #eeeeee;
     border-radius: 5px;
     overflow: hidden;
+    margin-top: 48px;
 }
 
 .range-controls .min-price {
@@ -863,6 +957,7 @@ table {
     width: 60px;
     padding: 10px 10px;
     margin-left: 10px;
+   margin-right: 27px;
     border: none;
     background: #eeeeee;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -876,7 +971,36 @@ table {
 }
 
 .price-controls {
+  margin-bottom: 52px;
     text-transform: uppercase;
+}
+
+.price-controls .max-price {
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.title-filter-net{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.blocks {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.title-filter-blocks{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 
@@ -954,9 +1078,28 @@ input[type="checkbox"]:checked + label::before {
     opacity: 0.5;
 }
 
-.filters ul,
-.catalog ul,
+.filters ul{
+    margin-left: 4px;
+     padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+
+.catalog ul {
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    
+}
+
 .pagination ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
     font-size: 16px;
     line-height: 20px;
@@ -980,7 +1123,7 @@ input[type="checkbox"]:checked + label::before {
 
 
 .filters-column li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 
@@ -1013,14 +1156,13 @@ input[type="checkbox"]:checked + label::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    margin-bottom: 29px;
     padding: 0px;
 }
 
 .sort-list-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -1101,7 +1243,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .pagination-list {
-    margin: 0;
+    margin: 60px;
     padding: 0;
     margin-bottom: 60px;
 
@@ -1177,7 +1319,6 @@ input[type="checkbox"]:checked + label::before {
 .btn-submit {
     display: block;
     width: 260px;
-    margin-top: 40px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500px;
@@ -1188,6 +1329,8 @@ input[type="checkbox"]:checked + label::before {
     text-align: center;
     border-radius: 3px;
     border: 0;
+    margin-top: 60px;
+    padding: 14px 0px;
 }
 
 .btn-submit:hover {
@@ -1315,4 +1458,3 @@ input[type="checkbox"]:checked + label::before {
 
 
 
- 
