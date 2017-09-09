@@ -620,28 +620,36 @@ img {
 }
 
 
-.partners-item::before {
+.partners-item-htmlacademy::before {
   position: absolute;
   content: "";
   width: 2px;
-  height: 80px;
-  background-color: red;
-  top: 0px;
-  left: 219px;
+  height: 50px;
+  background-color: #eeeeee;
+  left: 295px;
+    top: 90px;
 }
 
-/*
-из-за того что картинки разной высоты и полоски не ровно по вертикали. Нужно в html на .partners-item задать доп классы
- и выровнять полоски по высоте - top
- .partners-item-borodinski::before {
-    rules
- }
-и так со всеми полосками, которые не поддаются дрессировке
+.partners-item-barbershop::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee;
+  left: 595px;
+    top: 90px;
+}
 
-есть другой путь - перевырезать картинки.. но мне кажется первый быстрее
+.partners-item-pink:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee;
+  left: 895px;
+    top: 90px;
+}
 
-и чтоб их было видно я их сделала розовыми, перекрасишь как поправишь
-*/
 
 .partners a:hover {
     color: black;
