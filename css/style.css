@@ -1088,25 +1088,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 
-.catalog ul {
-    padding: 0;
-    list-style: none;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    
-}
-
-.pagination ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-
-}
-
 .filter-input:hover + label {
     color: #c9c9c9;
 }
@@ -1178,6 +1159,7 @@ input[type="checkbox"]:checked + label::before {
 
 }
 
+
 .catalog-title {
     font-size: 18px;
     line-height: 30px;
@@ -1188,6 +1170,17 @@ input[type="checkbox"]:checked + label::before {
     text-transform: none;
     font-size: 16px;
     line-height: 18px;
+}
+
+.catalog ul {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    
 }
 
 .btn-catalog {
@@ -1220,6 +1213,11 @@ input[type="checkbox"]:checked + label::before {
 .catalog-item {
     position: relative;
     margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.catalog-item:nth-child(n+5):nth-child(-n+6){
+    margin-bottom:0;
 }
 
 .catalog-item::before {
@@ -1240,16 +1238,27 @@ input[type="checkbox"]:checked + label::before {
 
 .pagination {
     margin-left: 400px;
+    margin-top: 0;
+}
+
+.pagination ul {
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 58px;
+    
+
 }
 
 .pagination-list {
-    margin: 60px;
-    padding: 0;
-    margin-bottom: 60px;
-
+    
+    margin-bottom: 50px;
+    padding-left: 2px;
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .pagination li {
     display: flex;
@@ -1267,8 +1276,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .pagination-item-current {
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     outline: 2px solid rgba(0, 0, 0, 0.1);
 
 }
