@@ -77,8 +77,12 @@ img {
   opacity: 0.8;
 }
 
+.header-logo img {
+    height: 70px;
+}
+
 .header-logo a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .header-logo a:active {
@@ -139,7 +143,6 @@ img {
   width: 100%;
   height: 2px;
   background-color: #fb565a;
-
   position: absolute;
   content: "";
   top: 30px;
@@ -163,18 +166,15 @@ img {
 
 .cart-link::before {
   content: "";
-
   width: 15px;
   height: 15px;
-
-  background-color: #eeeeee;
   position: absolute;
   top: 7px;
   left: 11px;
-
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Ccircle fill='%23a6a6a6' cx='4.5' cy='13.5' r='1.5'/%3E%3Ccircle fill='%23a6a6a6' cx='12.5' cy='13.5' r='1.5'/%3E%3Cpath fill='%23a6a6a6' d='M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #eeeeee;
 }
 
 .cart-link:hover::before,
@@ -490,7 +490,6 @@ img {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-
   position: absolute;
   content: "";
   top: 11px;
@@ -529,6 +528,7 @@ img {
 .about-us-plus li {
   display: flex;
   flex-direction: column;
+  width: 98px;
 }
 
 .about-us-data {
@@ -556,14 +556,45 @@ img {
 
 .partners {
   display: flex;
-  margin: 0;
-  padding: 0;
-  padding-top: 29px;
+  padding-top: 70px;
+  padding-bottom: 45px;
   justify-content: space-around;
   align-items: center;
-  min-height: 185px;
   margin-bottom: 71px;
+  padding-left: 28px;
   position: relative;
+}
+
+.partners a {
+  display: block;
+  width: 280px;
+  margin-right: 20px;
+  position: relative;
+  opacity: 0.2;
+}
+
+.partners a:last-child {
+  margin-right: 0;
+}
+
+.partners .partners-item-barbershop {
+  margin-right: 83px;
+}
+
+.partners .partners-item-pink {
+  margin-right: 84px;
+}
+
+.partners .partners-item-htmlacademy {
+  margin-right: 75px;
+}
+
+.partners a:hover {
+  opacity: 1;
+}
+
+.partners a:active {
+  opacity: 0.1;
 }
 
 .partners::after {
@@ -587,65 +618,31 @@ img {
   left: 0;
 }
 
-.partners-item {
-  margin-left: -22px;
-  color: black;
-  opacity: 0.3;
-  position: relative;
-}
-
-.partners-item-htmlacademy::before {
+.partners a::before {
   position: absolute;
   content: "";
   width: 2px;
   height: 50px;
-  background-color: #eeeeee;
-  left: 295px;
-  top: 90px;
+  background-color: grey;
+  right: -29px;
+  top: 8px;
 }
 
-.partners-item-barbershop::before {
-  position: absolute;
-  content: "";
-  width: 2px;
-  height: 50px;
-  background-color: #eeeeee;
-  left: 595px;
-  top: 90px;
+.partners .partners-item-barbershop::before {
+  right: -32px;
+  top: 19px;
 }
 
-.partners-item-pink::before {
-  position: absolute;
-  content: "";
-  width: 2px;
-  height: 50px;
-  background-color: #eeeeee;
-  left: 895px;
-  top: 90px;
+.partners .partners-item-pink::before {
+  right: -27px;
+  top: 0;
 }
 
-.partners-item-htmlacademy,
-.partners-item-barbershop,
-.partners-item-pink,
-.partners-item-mishka {
-  opacity: 0.2;
-}
-
-.partners-item-htmlacademy:hover,
-.partners-item-barbershop:hover,
-.partners-item-pink:hover,
-.partners-item-mishka:hover {
+.partners a::before {
   opacity: 1;
 }
 
-.partners-item-htmlacademy:active,
-.partners-item-barbershop:active,
-.partners-item-pink:active,
-.partners-item-mishka:active {
-  opacity: 0.1;
-}
-
-.partners-item:nth-child(4)::before {
+.partners .partners-item-mishka::before {
   display: none;
 }
 
@@ -1070,8 +1067,8 @@ input[type="checkbox"]:checked + label::before {
   margin-left: 186px;
 }
 
-.sort-list-item:nth-child(n+2){
-  opacity: 0.3;  
+.sort-list-item:nth-child(n+2) {
+  opacity: 0.3;
 }
 
 .arrow-list {
@@ -1139,7 +1136,7 @@ input[type="checkbox"]:checked + label::before {
   width: 260px;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500px;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -1197,7 +1194,6 @@ input[type="checkbox"]:checked + label::before {
 .catalog ul {
   padding: 0;
   margin: 0;
-
   list-style: none;
   font-size: 16px;
   line-height: 20px;
@@ -1315,7 +1311,6 @@ P
 }
 
 .pagination-list {
-
   margin-bottom: 50px;
   padding-left: 2px;
   display: flex;
@@ -1363,7 +1358,6 @@ P
   height: 50px;
   background: #eeeeee;
   text-align: center;
-  padding-bottom: 20px 0;
   cursor: pointer;
 }
 
@@ -1385,7 +1379,6 @@ P
   position: fixed;
   top: 20px;
   left: 50%;
-
   width: 870px;
   margin: 0 auto;
   margin-left: -485px;
@@ -1393,7 +1386,6 @@ P
   padding-bottom: 87px;
   padding-left: 100px;
   z-index: 2;
-
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
@@ -1441,25 +1433,19 @@ P
   position: absolute;
   top: 75px;
   right: 110px;
-
   width: 24px;
   height: 24px;
-
   background-color: #ffffff;
   border: none;
-
   cursor: pointer;
 }
 
 .button-close::before,
 .button-close::after {
   content: "";
-
   position: absolute;
-
   width: 24px;
   height: 4px;
-
   background-color: #fecccd;
 }
 
@@ -1501,7 +1487,6 @@ P
   box-sizing: border-box;
   width: 360px;
   padding: 10px 14px;
-
   font: inherit;
   color: #000000;
 }
@@ -1511,7 +1496,6 @@ P
   width: 760px;
   padding: 7px 14px;
   padding-bottom: 78px;
-
   font: inherit;
   color: #000000;
 }
