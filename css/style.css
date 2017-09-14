@@ -22,6 +22,7 @@ img {
 }
 
 .container {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -648,7 +649,6 @@ img {
 
 .map {
   width: 100%;
-  position: relative;
 }
 
 iframe {
@@ -662,8 +662,8 @@ iframe {
   width: 320px;
   height: 310px;
   margin: 0 auto;
-  top: 52px;
-  left: 86px;
+  bottom: 61px;
+  left: 19px;
   background: white;
   text-align: center;
 }
@@ -687,9 +687,10 @@ iframe {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 53px;
+  margin-left: -26px;
   margin-bottom: 21px;
-  
+
 }
 
 .contacts-text {
